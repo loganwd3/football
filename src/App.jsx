@@ -22,7 +22,9 @@ function App() {
     //fetch players
     const fetchPlayers = async () => {
       try {
-        const response = await fetch("http://localhost:8000/players");
+        const response = await fetch(
+          "https://football-be.onrender.com/players"
+        );
         const data = await response.json();
 
         search.length
@@ -41,7 +43,9 @@ function App() {
     //fetch managers
     const fetchManagers = async () => {
       try {
-        const response = await fetch("http://localhost:8000/managers");
+        const response = await fetch(
+          "https://football-be.onrender.com/managers"
+        );
         const data = await response.json();
         // console.log(data.managers);
         search.length
@@ -61,7 +65,7 @@ function App() {
 
     const fetchclubs = async () => {
       try {
-        const response = await fetch("http://localhost:8000/clubs");
+        const response = await fetch("https://football-be.onrender.com/clubs");
         const data = await response.json();
         search.length
           ? setClubsData(
