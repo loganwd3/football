@@ -1,0 +1,31 @@
+.logo {
+  width: 6%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.menu {
+  width: 100%;
+  padding: 10px 70px;
+  /* background-color: rgb(17, 0, 255); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul {
+  /* background-color: blue; */
+  list-style-type: none;
+  display: flex;
+  column-gap: 60px;
+}
+
+.menu ul li:hover {
+  border-bottom: 4px solid white;
+}
+
+.menu ul li a {
+  text-decoration: none;
+}
